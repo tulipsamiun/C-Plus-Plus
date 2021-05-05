@@ -13,10 +13,9 @@ void bfsT(int b) {
 
 	//push b intoqueqe
 	q.push(b);
-    //make b as visited
-	v[b]= true;
+    	//make b as visited
+	v[b] = true;
 	cout<<"The BFS Traversal is..";
-
 
 	while (!q.empty()) {
 		// picc root
@@ -24,9 +23,9 @@ void bfsT(int b) {
 		//pop front
 		q.pop();
 		
-		for(auto j=g[fnt].begin(); j!=g[fnt].end(); j++){
+		for(auto j = g[fnt].begin(); j != g[fnt].end(); j++){
 		    if(!v[*j]){
-		        v[*j]=true;
+		        v[*j] = true;
 		        q.push(*j);
 		    }
 		}
@@ -35,29 +34,27 @@ void bfsT(int b) {
 	
 
 	}
-	//;
 }
 void makeEdge(int a, int b){
     g[a].push_back(b);///bdge from a to b directed graph
 }
 int main(){
     int n,a;
-    cout<<"Enter No of vertices";
-    cin>>n;
-    cout<<"enter no edges";
-    cin>>a;
+    cout << "Enter No of vertices";
+    cin >> n;
+    cout << "enter no edges";
+    cin >> a;
     
     v.assign(n,false);
     g.assign(n, vector<int>());
-    
-    
+        
     int i,l,m;
     
     for(i=0;i<a;i++){
-        cin>>l>>m;
-    makeEdge(l,m);
+        cin >> l >> m;
+    	makeEdge(l,m);
     }
-    for(int i=0;i<n;i++){
+    for(int i = 0; i < n; i++){
         //if the node is not visited
         if(!v[i]){
             bfsT(i);
@@ -66,8 +63,4 @@ int main(){
     
     cout<<"\n\n\n";
     return 0;
-        
 }
-
-
-
