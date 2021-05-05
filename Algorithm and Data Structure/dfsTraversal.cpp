@@ -4,8 +4,6 @@ using namespace std;
 vector<int> graph[5];
 bool visited[5];
 
-
-
 void dfs(int source){
     visited[source]=1;
     //cout<< source<< " ";
@@ -34,12 +32,7 @@ for(int i=0; i<nodes;i++){
     if(visited[i]==1)
     cout<< i<< " ";
 }
-
-return 0;
-
-    
-    
-    
+return 0;  
 }
 
 
