@@ -1,7 +1,7 @@
 #include<iostream>
-using namespace std;
 #include<vector>
 #include<queue>
+using namespace std;
 
 vector<int> v;
 vector< vector<int>> g;
@@ -29,12 +29,10 @@ void bfsT(int b) {
 		        q.push(*j);
 		    }
 		}
-
 		std::cout << fnt <<" ";
-	
-
 	}
 }
+
 void makeEdge(int a, int b){
     g[a].push_back(b);///bdge from a to b directed graph
 }
