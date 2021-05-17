@@ -2,13 +2,13 @@
 using namespace std;
 
 // Base class
-class Employee{
+class Employee {
 	protected: //Protected access specifier
-    	int salary;
+    	  int salary;
 };
 
 // Derived class
-class Programmer:public Employee{
+class Programmer: public Employee {
 	public:
     	int bonus;
         void setSalary(int s){
