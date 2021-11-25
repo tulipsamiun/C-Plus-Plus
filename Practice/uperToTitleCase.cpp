@@ -10,8 +10,8 @@ int main()
     getline(cin,text);
     n = text.size();
     text[0] = toupper(text[0]);
-    for( i = 1 ; i < n; i++ ){
-        if(text[i-1] == ' '){
+    for (i = 1 ; i < n; i++) {
+        if (text[i-1] == ' ') {
             text[i] = toupper(text[i]);
         }
         else 
