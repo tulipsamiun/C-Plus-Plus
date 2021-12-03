@@ -14,7 +14,7 @@ int main()
     printf("Enter Value For n = ");
     scanf("%d", &n);
     fact =  fact1(n);
-    if( fact == -1) 
+    if (fact == -1) 
         printf("Factorial of a negative number does not exists");
     else
         printf("Factorial = %d", fact);
