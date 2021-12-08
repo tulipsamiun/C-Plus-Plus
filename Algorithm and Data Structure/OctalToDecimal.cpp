@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    //printf("Hello World");
     int dec =0 , n, i;
     string oct;
     printf("enter Number");
