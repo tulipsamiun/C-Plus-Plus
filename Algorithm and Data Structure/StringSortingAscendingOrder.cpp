@@ -7,7 +7,6 @@ int main()
 {
     int i, j, n;
     char x[10][10], temp[10];
-    printf("Hello World");
     printf("Enter No Of Strings = ");
     scanf("%d", &n);
     printf("\nEnter The String");
