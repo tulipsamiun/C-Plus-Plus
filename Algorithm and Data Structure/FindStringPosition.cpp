@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int i, n, count;
+    int i, n, count = 0;
     char x[20][20], name[20];
     printf("Enter No of Strings ");
     scanf("%d", &n);
@@ -17,7 +17,7 @@ int main()
     scanf("%s", name);
     for(i =0; i < n; i++){
         if(strcmp (x[i], name) == 0){
-            printf("The String Is At Position %d", i+1);
+            printf("The String Is At Position %d\n", i+1);
             count ++;
         }
     }
